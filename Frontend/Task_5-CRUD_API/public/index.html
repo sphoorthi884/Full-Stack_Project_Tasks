@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cognifyz Task 5 — REST API & Frontend</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Task 5 — REST API (CRUD) Demo</h1>
+
+    <section class="form-section">
+      <h2>Create / Update Item</h2>
+      <form id="itemForm">
+        <input type="hidden" id="itemId" />
+        <label>Title</label>
+        <input id="title" placeholder="Item title" required />
+        <label>Description</label>
+        <textarea id="description" placeholder="Short description"></textarea>
+        <button id="saveBtn" type="submit">Save</button>
+        <button id="cancelEdit" type="button" class="secondary hidden">Cancel Edit</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Items</h2>
+      <ul id="itemsList" class="items-list"></ul>
+    </section>
+
+    <footer class="small">
+      Internship PDF (local): <code>/mnt/data/FULL STACK DEVELOPMENT (1).pdf</code>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

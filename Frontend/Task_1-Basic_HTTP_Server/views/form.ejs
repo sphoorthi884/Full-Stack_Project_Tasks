@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Task 1 — Cognifyz Internship</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/public/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Task 1 — HTML Form & Server</h1>
+    <p>Fill the form and submit. Server-side validation is applied.</p>
+
+    <form action="/submit" method="post" novalidate>
+      <label>
+        Name
+        <input type="text" name="name" value="<%= values.name ? values.name : '' %>" placeholder="Your name" />
+        <% if (errors.name) { %>
+          <div class="error"><%= errors.name %></div>
+        <% } %>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" value="<%= values.email ? values.email : '' %>" placeholder="you@domain.com" />
+        <% if (errors.email) { %>
+          <div class="error"><%= errors.email %></div>
+        <% } %>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Write something..."><%= values.message ? values.message : '' %></textarea>
+        <% if (errors.message) { %>
+          <div class="error"><%= errors.message %></div>
+        <% } %>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

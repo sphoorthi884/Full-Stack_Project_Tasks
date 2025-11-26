@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 — Advanced Form Validation & DOM Manipulation</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Task 4 — Complex Form Validation & Dynamic DOM</h1>
+  </header>
+
+  <main class="container">
+
+    <form id="registerForm" novalidate>
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="fullname" />
+        <p class="error" id="nameError"></p>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" />
+        <p class="error" id="emailError"></p>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="password" />
+        <p class="strength" id="strengthText"></p>
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" />
+        <p class="error" id="confirmError"></p>
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+
+      <p id="successMsg" class="success hidden">Registration Successful 🎉</p>
+
+    </form>
+
+    <!-- DYNAMIC BOX DEMO -->
+    <section class="box-section">
+      <h2>Dynamic DOM Example</h2>
+      <p>Click the button to toggle the box:</p>
+      <button id="toggleBoxBtn" class="btn secondary">Toggle Box</button>
+
+      <div id="dynamicBox" class="dynamic-box">
+        I appear and disappear dynamically!
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f7f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #4d47ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4d47ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4d47ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: #15161a;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  height: 14px;
+}
+
+.success {
+  color: green;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.strength {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dynamic-box {
+  margin-top: 15px;
+  padding: 20px;
+  background: #e8e9ff;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}

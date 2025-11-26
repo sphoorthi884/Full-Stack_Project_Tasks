@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  background: #f7f7ff;
+}
+
+.container {
+  max-width: 450px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-box {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #e9ebff;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4d47ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button.secondary {
+  background: black;
+}

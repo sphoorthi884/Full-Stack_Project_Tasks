@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Submission Received</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/public/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Submission Received</h1>
+    <p>Thank you, <strong><%= record.name %></strong>. Your message has been stored temporarily.</p>
+
+    <section class="card">
+      <h2>Saved Record</h2>
+      <dl>
+        <dt>ID</dt><dd><%= record.id %></dd>
+        <dt>Name</dt><dd><%= record.name %></dd>
+        <dt>Email</dt><dd><%= record.email %></dd>
+        <dt>Message</dt><dd><%= record.message %></dd>
+        <dt>Time</dt><dd><%= record.createdAt.toLocaleString() %></dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>All Submissions (Temporary)</h2>
+      <ul>
+        <% submissions.forEach(s => { %>
+          <li>#<%= s.id %> — <%= s.name %> — <%= new Date(s.createdAt).toLocaleString() %></li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <a href="/" class="button">Back to form</a>
+  </main>
+</body>
+</html>

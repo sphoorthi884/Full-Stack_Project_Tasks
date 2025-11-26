@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2 Form</title>
+
+  <!-- INLINE CSS -->
+  <style>
+    body { font-family: Arial; background:#f4f4f4; padding:30px; }
+    form { background:white; padding:20px; width:400px; margin:auto; border-radius:10px; }
+    label { font-weight:bold; }
+    input, textarea {
+      width:100%; padding:8px; margin:5px 0 15px; border-radius:5px; border:1px solid #ccc;
+    }
+    .error { color:red; margin-top:-10px; font-size:14px; }
+    button { background:#4e44ff; color:white; padding:10px; border:none; border-radius:6px; width:100%; }
+  </style>
+
+  <!-- INLINE JavaScript (client-side validation) -->
+  <script>
+    function validateForm() {
+      const name = document.forms["myForm"]["name"].value;
+      const email = document.forms["myForm"]["email"].value;
+      const age = document.forms["myForm"]["age"].value;
+      const msg = document.forms["myForm"]["message"].value;
+
+      if (name.trim().length < 2) {
+        alert("Name must be at least 2 characters");
+        return false;
+      }
+      if (!email.includes("@")) {
+        alert("Enter a valid email");
+        return false;
+      }
+      if (age < 1 || age > 120) {
+        alert("Age must be between 1-120");
+        return false;
+      }
+      if (msg.trim().length < 10) {
+        alert("Message must be at least 10 characters");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align:center;">Task 2 — Form With Inline Styles & JS</h1>
+
+  <form name="myForm" action="/submit" method="POST" onsubmit="return validateForm()">
+
+    <label>Name</label>
+    <input type="text" name="name" value="<%= values.name || '' %>">
+    <p class="error"><%= errors.name || '' %></p>
+
+    <label>Email</label>
+    <input type="email" name="email" value="<%= values.email || '' %>">
+    <p class="error"><%= errors.email || '' %></p>
+
+    <label>Age</label>
+    <input type="number" name="age" value="<%= values.age || '' %>">
+    <p class="error"><%= errors.age || '' %></p>
+
+    <label>Message</label>
+    <textarea name="message"><%= values.message || '' %></textarea>
+    <p class="error"><%= errors.message || '' %></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
