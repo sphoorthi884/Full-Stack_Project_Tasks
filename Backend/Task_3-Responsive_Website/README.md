@@ -1,4 +1,4 @@
-Cognifyz_Task_3 — Advanced CSS & Responsive Design
+Task 3 — Advanced CSS & Responsive Design
 -------------------------------------------------
 
 Files:
@@ -7,14 +7,15 @@ Files:
 - js/script.js
 
 How to run:
-- Open index.html in your browser (double-click) OR serve with a local static server.
-- No Node/Express required; this is a static responsive demo that uses Bootstrap CDN.
+- Open index.html in your browser (double-click), or use any local static server.
+- No Node.js or Express required — this is a fully static responsive layout.
 
 What this demonstrates:
-- Responsive multi-section layout using Bootstrap grid + custom CSS.
-- Advanced visual polish: animations, transitions, hover effects, focus states.
-- Lightweight client-side form validation with microinteractions.
-- Accessibility considerations and semantic HTML.
+- Responsive multi-section layout using Bootstrap grid along with custom CSS.
+- Advanced visual styling: animations, transitions, hover effects, and focus states.
+- Lightweight client-side form validation and interactive UI behavior.
+- Semantic HTML structure and basic accessibility considerations.
 
-Reference:
-- Internship PDF (local): /mnt/data/FULL STACK DEVELOPMENT (1).pdf
+Notes:
+- This project is ideal for practicing modern front-end design patterns.
+- Can be improved by adding more components, custom themes, or converting UI into reusable components.

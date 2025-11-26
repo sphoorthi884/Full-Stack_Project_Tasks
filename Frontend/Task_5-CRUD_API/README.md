@@ -1,22 +1,26 @@
-Cognifyz_Task_5 — REST API (CRUD) + Front-end
+Task 5 — REST API (CRUD) + Front-end
 --------------------------------------------
 
 How to run:
-1. Open terminal in Cognifyz_Task_5 folder
+1. Open terminal inside Task_5
 2. npm install
 3. npm start
-4. Open http://localhost:3002
+4. Open http://localhost:3002 in your browser
 
 What it includes:
-- Express REST API: GET/POST/PUT/DELETE at /api/items
-- Front-end that performs fetch() requests to the API
-- In-memory storage (temporary). To persist data, replace with MongoDB or other DB.
+- A complete Express.js REST API supporting CRUD operations
+- Endpoints for creating, reading, updating, and deleting items
+- Front-end interface that uses fetch() to communicate with the API
+- In-memory storage (temporary). Can be replaced with MongoDB or any database for persistence.
 
-API quick doc:
-- GET  /api/items          -> returns list
-- GET  /api/items/:id      -> returns single item
-- POST /api/items          -> create { title, description }
-- PUT  /api/items/:id      -> update fields
-- DELETE /api/items/:id    -> delete item
+API Documentation:
+- GET    /api/items          -> returns all items
+- GET    /api/items/:id      -> returns a single item by ID
+- POST   /api/items          -> creates a new item { title, description }
+- PUT    /api/items/:id      -> updates an existing item
+- DELETE /api/items/:id      -> deletes an item by ID
 
-Internship PDF (local path): /mnt/data/FULL STACK DEVELOPMENT (1).pdf
+Notes:
+- This project demonstrates essential backend concepts: routing, middleware, and request handling.
+- The included front-end showcases how to integrate a UI with an API using fetch().
+- Database support can be added for long-term data storage.

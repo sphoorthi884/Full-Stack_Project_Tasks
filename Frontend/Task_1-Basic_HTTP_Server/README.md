@@ -1,4 +1,4 @@
-Cognifyz Task 1 — HTML Form & Express Server
+Task 1 — HTML Form & Express Server
 -------------------------------------------
 
 Requirements:
@@ -6,7 +6,7 @@ Requirements:
 - npm
 
 Setup:
-1. cd Cognifyz_Task_1
+1. cd Task_1
 2. npm install
 
 Run:
@@ -14,11 +14,11 @@ Run:
   Open http://localhost:3000
 
 What it does:
-- Serves a form at /
-- Validates input on the server
-- Stores submissions temporarily in-memory
-- Shows a result page after successful submission.
+- Serves an HTML form at the home route (/)
+- Validates user input on the server
+- Stores submissions temporarily in memory
+- Shows a result/confirmation page after successful submission
 
 Notes:
-- This is a beginner-level task built to demonstrate server-side rendering and validation.
-- For production, replace in-memory storage with a database (e.g., MongoDB).
+- This is a beginner-friendly project demonstrating server-side rendering, routing, and validation.
+- In a real application, replace in-memory storage with a database (e.g., MongoDB, PostgreSQL).
